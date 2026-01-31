@@ -5,7 +5,7 @@ const button = document.getElementById("button");
 
 button.addEventListener("click", async () => {
   try {
-    const response = await axios.get("https://shivastuhero.onrender.com");
+    const response = await axios.get("https://shivastuhero.onrender.com/api/health");
 
     output.textContent = JSON.stringify(response.data, null, 2);
   } catch (error) {
